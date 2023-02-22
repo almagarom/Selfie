@@ -1,0 +1,84 @@
+<html>
+    <head>
+       <title>Mi Aplicación de Selfies</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+
+<!---------------C99-->
+<!----------222222222222-->
+<!--Para abrir la camara web-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<!-- Tenemos que abrir el siguiente enlace-->
+<!--Actividad maestra 4---- alumno act 2-->
+<!--"https://cdnjs.com/libraries/webcamjs"-->
+<!--Y copiar el segundo enlace-->
+
+
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <!--Agregamos una etiqueta <a> para descargar la selfie-->
+        <!--href queda vacio para llenarlo posteriormente-->
+        <!--download: es el nombre que tendrá la imagen al descargarla-->
+        <a href="" id="link" download="selfie.png">DESCARGAR</a>
+
+        <h1>Aplicación de voz para tomar selfies por voz
+
+
+            <!--Agregamos una imagen como icono del titulo-->
+            <img id="logo_img" src="selfie.jpeg">
+
+
+        </h1>
+        <hr>
+        <h4 style="color:red;">Haz clic en permitir cuando aparezca la ventana emergente, después de dar una orden de voz.</h4>
+        
+        <div class="form-group">
+            <h3>Di "toma mi selfie"</h3>
+            <label>Tu salida de voz: </label>
+
+
+            <!--Agregamos un textarea donde se mostrará nuestra voz en texto-->
+            <!--readonly: el usuario no podrá escribir, solo leer-->
+            <textarea class="form-control" id="textbox" readonly="true"></textarea>
+
+
+
+        </div>
+
+        <!--Agregamos el boton para iniciar el reconocimiento de voz-->
+        <button class="btn btn-primary" onclick="start()"> INICIAR </button>
+
+
+        <p>Haz clic en el botón Iniciar</p>
+
+        <label>Tu cámara: </label>
+
+
+        <!--agregamos la sección donde después veremos nuestra camara-->
+        <div id="camera"></div>
+
+
+
+        <br>
+
+        <label>Tu selfie aparecerá aquí: </label>
+
+
+        <!--Para mostrar donde estará el resulttado de la foto tomada-->
+        <div id="result"></div>
+
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
