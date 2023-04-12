@@ -1,12 +1,13 @@
 #start-btn
 {
     width: 40%;
+    background-color: lightblue !important
 } 
 #camera
 {
     width:360px;
     height: 250px;
-    border:1px solid grey;
+    border:1px dashed green;
 }
 #logo_img
 {
@@ -18,5 +19,5 @@
     width: 300px;
 }
 body{
-    background-color:cyan    
+    background-color:linear-gradient(cyan, red)   
 }
